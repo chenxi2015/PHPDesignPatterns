@@ -1,0 +1,23 @@
+{
+    "name": "administrator/php-demo-models",
+    "authors": [
+        {
+            "name": "chenxi",
+            "email": "bbxycx.18@163.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gxheart\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Gxheart\\Tests\\": "tests/"
+        }
+    }
+
+}
