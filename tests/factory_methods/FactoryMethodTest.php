@@ -22,7 +22,7 @@ class FactoryMethodTest extends TestCase
     {
         $loggerFactory = new FileLoggerFactory(sys_get_temp_dir());;
         $logger = $loggerFactory->createLogger();
-        print_r(sys_get_temp_dir());
+        // print_r(sys_get_temp_dir());
         $this->assertInstanceOf(FileLogger::class, $logger);
     }
 }
