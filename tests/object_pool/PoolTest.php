@@ -25,8 +25,8 @@ class PoolTest extends TestCase
         $worker1 = $pool->get();
         $pool->dispose($worker1);
         $worker2 = $pool->get();
-        print_r($worker1);
-        print_r($worker2);
+        // print_r($worker1);
+        // print_r($worker2);
 
         $this->assertCount(1, $pool);
         $this->assertSame($worker1, $worker2);
