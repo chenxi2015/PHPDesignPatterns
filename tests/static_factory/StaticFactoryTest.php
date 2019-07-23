@@ -18,8 +18,8 @@ class StaticFactoryTest extends TestCase
         $this->assertInstanceOf(FormatString::class, StaticFactory::factory('string'));
     }
 
-    // public function testException()
-    // {
-    //     // StaticFactory::factory('object');
-    // }
+    public function testException()
+    {
+        StaticFactory::factory('object');
+    }
 }
